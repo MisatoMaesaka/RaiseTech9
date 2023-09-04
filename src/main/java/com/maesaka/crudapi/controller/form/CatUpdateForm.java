@@ -1,5 +1,7 @@
 package com.maesaka.crudapi.controller.form;
 
+// 反映されないので解消したい
+
 import jakarata.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 
