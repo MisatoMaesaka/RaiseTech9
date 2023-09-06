@@ -7,4 +7,12 @@ import java.util.List;
 public interface CatService {
     List<Cat> findAll();
 
+    Cat findCatId(int id);
+
+    Cat createCat(Cat cat);
+
+    void updateCat(int id, String name, int age, String favoriteSnack);
+
+    void deleteCat(int id);
+
 }
