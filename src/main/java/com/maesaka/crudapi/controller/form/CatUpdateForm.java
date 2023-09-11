@@ -12,12 +12,12 @@ public class CatUpdateForm {
     private int age;
 
     @NotEmpty(message = "Please provide a favorite snack")
-    private String favoriteSnack;
+    private String favorite_snack;
 
-    public CatUpdateForm(String name, int age, String favoriteSnack) {
+    public CatUpdateForm(String name, int age, String favorite_snack) {
         this.name = name;
         this.age = age;
-        this.favoriteSnack = favoriteSnack;
+        this.favorite_snack = favorite_snack;
     }
 
     public String getName() {
@@ -28,7 +28,7 @@ public class CatUpdateForm {
         return age;
     }
 
-    public String getFavoriteSnack() {
-        return favoriteSnack;
+    public String getFavorite_snack() {
+        return favorite_snack;
     }
 }

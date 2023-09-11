@@ -35,11 +35,11 @@ public class CatServiceImpl implements CatService {
     }
 
     @Override
-    public void updateCat(int id, String name, int age, String favoriteSnack) {
+    public void updateCat(int id, String name, int age, String favorite_snack) {
         Cat cat = catMapper.findCatId(id).orElseThrow(() -> new ResourceNotFoundException("resource not found: " + id));
         cat.setName(name);
         cat.setAge(age);
-        cat.setFavoriteSnack(favoriteSnack);
+        cat.setFavorite_snack(favorite_snack);
         catMapper.updateCat(cat);
     }
 

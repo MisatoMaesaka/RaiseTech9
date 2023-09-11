@@ -7,10 +7,10 @@ public class CatCreateForm {
     private int id;
     private String name;
     private int age;
-    private String favoriteSnack;
+    private String favorite_snack;
 
     public Cat convertToCat() {
-        Cat cat = new Cat(id, name, age, favoriteSnack);
+        Cat cat = new Cat(id, name, age, favorite_snack);
         return cat;
     }
 
@@ -26,7 +26,7 @@ public class CatCreateForm {
         return age;
     }
 
-    public String getFavoriteSnack() {
-        return favoriteSnack;
+    public String getFavorite_snack() {
+        return favorite_snack;
     }
 }

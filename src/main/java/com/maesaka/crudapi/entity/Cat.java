@@ -5,13 +5,13 @@ public class Cat {
     private int id;
     private String name;
     private int age;
-    private String favoriteSnack;
+    private String favorite_snack;
 
-    public Cat(int id, String name, int age, String favoriteSnack) {
+    public Cat(int id, String name, int age, String favorite_snack) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.favoriteSnack = favoriteSnack;
+        this.favorite_snack = favorite_snack;
     }
 
     public int getId() {
@@ -26,8 +26,8 @@ public class Cat {
         return age;
     }
 
-    public String getFavoriteSnack() {
-        return favoriteSnack;
+    public String getFavorite_snack() {
+        return favorite_snack;
     }
 
     public void setName(String name) {
@@ -38,7 +38,7 @@ public class Cat {
         this.age = age;
     }
 
-    public void setFavoriteSnack(String favoriteSnack) {
-        this.favoriteSnack = favoriteSnack;
+    public void setFavorite_snack(String favorite_snack) {
+        this.favorite_snack = favorite_snack;
     }
 }
