@@ -1,4 +1,4 @@
-package com.maesaka.crudapi;
+package com.maesaka.crudapi.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException() {
