@@ -70,7 +70,7 @@ public class CatController {
 
     @PatchMapping("/cats/{id}")
     public ResponseEntity<Map<String, String>> updateCat(@PathVariable("id") int id, @RequestBody @Validated CatUpdateForm catUpdateForm) {
-        catService.updateCat(id, catUpdateForm.getName(), catUpdateForm.getAge(), catUpdateForm.getFavorite_snack());
+        catService.updateCat(id, catUpdateForm.getName(), catUpdateForm.getAge(), catUpdateForm.getFavoriteSnack());
         return ResponseEntity.ok(Map.of("message", "successfully updated"));
     }
 

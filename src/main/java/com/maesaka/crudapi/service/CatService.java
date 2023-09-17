@@ -11,7 +11,7 @@ public interface CatService {
 
     Cat createCat(Cat cat);
 
-    void updateCat(int id, String name, int age, String favorite_snack);
+    void updateCat(int id, String name, int age, String favoriteSnack);
 
     void deleteCat(int id);
 

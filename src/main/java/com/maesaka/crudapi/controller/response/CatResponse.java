@@ -5,18 +5,18 @@ import com.maesaka.crudapi.entity.Cat;
 public class CatResponse {
 
     private String name;
-    private String favorite_snack;
+    private String favoriteSnack;
 
     public CatResponse(Cat cat) {
         this.name = cat.getName();
-        this.favorite_snack = cat.getFavorite_snack();
+        this.favoriteSnack = cat.getFavoriteSnack();
     }
 
     public String getName() {
         return name;
     }
 
-    public String getFavorite_snack() {
-        return favorite_snack;
+    public String getFavoriteSnack() {
+        return favoriteSnack;
     }
 }
