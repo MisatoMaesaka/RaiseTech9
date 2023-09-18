@@ -1,15 +1,14 @@
 package com.maesaka.crudapi.controller.form;
 
-// 反映されないので解消したい
 
-import jakarata.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 
 public class CatUpdateForm {
     @NotEmpty(message = "必須入力です")
     private String name;
 
-    @Range(in = 0, max = 30, message = "Please age must be between 0 and 30")
+    @Range(min = 0, max = 30, message = "Please age must be between 0 and 30")
     private int age;
 
     @NotEmpty(message = "Please provide a favorite snack")
